@@ -18,7 +18,10 @@ Transformation
    object/multiple jslts in one transformation
 
 Assumptions:
-1. Config server not required 
+1. From provided sample, made below assumptions
+   a. transformed output if a text node (non-object) add as a direct child replacing the current parent node
+   b. if its an object with multiple elements add it with the name provided in the transformation 
+3. Config server not required 
    would be a good idea for easy change of config for testing transformations
    it would need Service registry as well.
 2. will start with basic config with in application as json file

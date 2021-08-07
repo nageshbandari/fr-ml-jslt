@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "734fdd6e-eb2b-4d7a-a0d7-8947f0894ee8",
+		"name": "FR-JSLT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Transform",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"eventId\": \"878237843\",\r\n    \"device\": {\r\n        \"osType\": \"Linux\",\r\n        \"model\": \"Laptop\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/events/transforms/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"events",
+						"transforms",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Feature Config",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/events/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"events",
+						"get"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,18 @@
+{
+    "id": 1,
+    "name": "DeviceFeatures",
+    "transforms": [
+        {
+            "name": "device_os",
+            "jsltExpression": "{\"os_name\": .device.osType}"
+        },
+        {
+            "name": "deviceOs",
+            "jsltExpression": "{\"oname\": .device.osType, \"type\": .device.model}"
+        },
+        {
+            "name": "deviceOs1",
+            "jsltExpression": "[for (.map) string(.)]"
+        }
+    ]
+}
